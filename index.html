@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <!-- <link rel="stylesheet" href="css/master.less"> -->
+  <link rel="stylesheet" href="css/woman-s.css" media="(max-width:763px)">
+  <link rel="stylesheet" href="css/woman-m.css" media="(min-width:764px) and (max-width:1439px)">
+  <link rel="stylesheet" href="css/woman-l.css" media="(min-width:1440px)">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:300,400,500,600;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <title>I am woman</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <button class="page-header__menu" type="button"></button>
+    <a class="page-header__logo" href="index.html"></a>
+    <ul class="page-header__user-menu user-menu">
+      <li>
+        <button class="user-menu__item user-menu__item--find" type="button"></button>
+      </li>
+      <li>
+        <button class="user-menu__item user-menu__item--avatar" type="button"></button>
+      </li>
+      <li>
+        <button class="user-menu__item user-menu__item--bag" type="button"></button>
+      </li>
+    </ul>
+  </header>
+
+  <main class="page-main">
+    <h1 class="hidden" id="01">I am woman</h1>
+    <div class="catalog">
+      <div class="catalog__intro">
+        <h2 class="catalog__title">Новая <br>круизная коллекция &#10075;19</h2>
+        <a class="catalog__link" href="#">Перейти в каталог</a>
+      </div>
+      <div class="catalog__wrapper catalog__wrapper--main">
+        <form class="catalog__find-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="catalog__marker"></label>
+          <input class="catalog__field" name="catalog-find-form" type="search" placeholder="Найти на сайте" onchange="return findForm();">
+        </form>
+        <div class="catalog__body">
+          <h3 class="catalog__subtitle">Каталог</h3>
+          <div class="catalog__coat">
+            <ul class="catalog__list catalog__list--01">
+              <li class="catalog__item"><a href="">Пальто</a></li>
+              <li class="catalog__item"><a href="">Жилеты и жакеты</a></li>
+              <li class="catalog__item"><a href="">Костюмы</a></li>
+              <li class="catalog__item"><a href="">Трикотаж</a></li>
+              <li class="catalog__item"><a href="">Платья</a></li>
+              <li class="catalog__item"><a href="">Блузы и топы</a></li>
+              <li class="catalog__item"><a href="">Футболки</a></li>
+              <li class="catalog__item"><a href="">Юбки и брюки</a></li>
+              <li class="catalog__item"><a href="">Аксессуары</a></li>
+            </ul>
+            <ul class="catalog__list catalog__list--02">
+              <li class="catalog__item"><a href="">О бренде</a></li>
+              <li class="catalog__item"><a href="">Оферта</a></li>
+              <li class="catalog__item"><a href="">Оплата и доставка</a></li>
+              <li class="catalog__item"><a href="">Возврат</a></li>
+              <li class="catalog__item"><a href="">Контакты</a></li>
+              <li class="catalog__item"><a href="">Sale</a></li>
+              <li class="catalog__item"><a href="">New</a></li>
+              <li class="catalog__item"><a href="">Looks</a></li>
+              <li class="catalog__item"><a href="">Блог</a></li>
+              <li class="catalog__item"><a href="">Streetstyle</a></li>
+              <li class="catalog__item"><a href="">Войти в личный кабинет</a></li>
+              <li class="catalog__item"><a href="">Отзывы</a></li>
+            </ul>
+            <ul class="catalog__list catalog__list--03">
+              <li class="catalog__item"><a href="">О бренде</a></li>
+              <li class="catalog__item"><a href="">Оферта</a></li>
+              <li class="catalog__item"><a href="">Оплата и доставка</a></li>
+              <li class="catalog__item"><a href="">Возврат</a></li>
+              <li class="catalog__item"><a href="">Контакты</a></li>
+              <li class="catalog__item"><a href="">Sale</a></li>
+              <li class="catalog__item"><a href="">New</a></li>
+              <li class="catalog__item"><a href="">Looks</a></li>
+              <li class="catalog__item"><a href="">Блог</a></li>
+              <li class="catalog__item"><a href="">Streetstyle</a></li>
+              <li class="catalog__item"><a href="">Войти в личный кабинет</a></li>
+              <li class="catalog__item"><a href="">Отзывы</a></li>
+            </ul>
+            <ul class="catalog__list catalog__list--04">
+              <li class="catalog__item"><a href="">О бренде</a></li>
+              <li class="catalog__item"><a href="">Оферта</a></li>
+              <li class="catalog__item"><a href="">Оплата и доставка</a></li>
+              <li class="catalog__item"><a href="">Возврат</a></li>
+              <li class="catalog__item"><a href="">Контакты</a></li>
+              <li class="catalog__item"><a href="">Sale</a></li>
+              <li class="catalog__item"><a href="">New</a></li>
+              <li class="catalog__item"><a href="">Looks</a></li>
+              <li class="catalog__item"><a href="">Блог</a></li>
+              <li class="catalog__item"><a href="">Streetstyle</a></li>
+              <li class="catalog__item"><a href="">Войти в личный кабинет</a></li>
+              <li class="catalog__item"><a href="">Отзывы</a></li>
+            </ul>
+
+
+          </div>
+
+          <button class="catalog__close" type="button">
+            <svg width="26px" height="26px">
+              <path fill-rule="evenodd" stroke="rgb(52, 43, 43)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M24.013,2.971 L2.390,24.013 " />
+              <path fill-rule="evenodd" stroke="rgb(52, 43, 43)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M2.390,2.971 L24.013,24.013 " />
+            </svg></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="first-screen">
+      <div class="extra-menu">
+        <p class="extra-menu__text">Распродажа  SS’18</p>
+      </div>
+
+      <section class="collection">
+        <div class="collection__wrapper slider">
+          <div class="collection__list slider__list--collection">
+            <div class="collection__item collection__item--dress slider__slide">
+              <img class="collection__picture" src="img/dress-l.jpg" alt="Хлопковое платье в полоску">
+              <div class="collection__lable">
+                <p class="collection__name">Хлопковое платье в полоску</p>
+                <p class="collection__price">9 900 рублей</p>
+                <p class="collection__number">&lt; &nbsp; 01/<span class="collection__number--sum">3</span> &nbsp; &gt;</p>
+              </div>
+            </div>
+            <div class="collection__item collection__item--sports-suit slider__slide">
+              <img class="collection__picture" src="img/sports-suit-l.jpg" alt="Спортивный желтый костюм">
+              <div class="collection__lable">
+                <p class="collection__name">Спортивный желтый костюм</p>
+                <p class="collection__price">9 900 рублей</p>
+                <p class="collection__number">&lt; &nbsp; 02/<span class="collection__number--sum">3</span> &nbsp; &gt;</p>
+              </div>
+            </div>
+            <div class="collection__item collection__item--robe slider__slide">
+              <img class="collection__picture" src="img/robe-l.jpg" alt="Халат со стразами">
+              <div class="collection__lable">
+                <p class="collection__name">Платье-халат со стразами</p>
+                <p class="collection__price">9 900 рублей</p>
+                <p class="collection__number">&lt; &nbsp; 03/<span class="collection__number--sum">3</span> &nbsp; &gt;</p>
+              </div>
+            </div>
+          </div>
+          <ul class="collection__social social">
+            <li class="social__item social__item-collection"><a href="">Facebook</a></li>
+            <li class="social__item social__item-collection"><a href="">Youtube</a></li>
+            <li class="social__item social__item-collection"><a href="">Vkontakte</a></li>
+          </ul>
+          <a class="collection__more" href="#">Смотреть все</a>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__point pagination__point--active">01</li>
+          <li class="pagination__point"><a href="#02">02</a></li>
+          <li class="pagination__point"><a href="#03">03</a></li>
+          <li class="pagination__point">04</li>
+          <li class="pagination__point">05</li>
+          <li class="pagination__point">06</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <section class="whats-new">
+      <div class="whats-new__wrapper slider">
+        <h2 class="whats-new__title" id="02">Новое поступление</h2>
+        <ul class="whats-new__menu">
+          <li class="whats-new__point whats-new__point--active"><a href="">Платья</a></li>
+          <li class="whats-new__point"><a href="">Блузы и топы</a></li>
+          <li class="whats-new__point"><a href="">Брюки и юбки</a></li>
+        </ul>
+        <button class="whats-new__turn-page whats-new__turn-page--left" type="button">
+          <svg width="16" height="30">
+            <line x1="16" y1="0" x2="0" y2="15" stroke="#5c5551" stroke-width="2" />
+            <line x1="0" y1="15" x2="16" y2="30" stroke="#5c5551" stroke-width="2" />
+          </svg>
+        </button>
+        <button class="whats-new__turn-page whats-new__turn-page--right" type="button">
+          <svg width="16" height="30">
+            <line x1="0" y1="0" x2="16" y2="15" stroke="#5c5551" stroke-width="2" />
+            <line x1="16" y1="15" x2="0" y2="30" stroke="#5c5551" stroke-width="2" />
+          </svg>
+        </button>
+        <div class="whats-new__list slider__list--whats-new">
+          <div class="whats-new__item slider__slide">
+            <div class="whats-new__picture whats-new__picture--1">
+              <img class="whats-new__image" src="img/body-dress-l.jpg" alt="Платье-боди">
+            </div>
+            <p class="whats-new__name">Платье-боди</p>
+            <svg class="whats-new__tdl"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="75" height="12">
+              <line x1="0" y1="9" x2="75" y2="9" stroke="#5c5551"/>
+            </svg>
+            <p class="whats-new__price">11 700 рублей</p>
+          </div>
+          <div class="whats-new__item slider__slide">
+            <div class="whats-new__picture whats-new__picture--2">
+              <img class="whats-new__image" src="img/ethnic-dress-l.jpg" alt="Этническое платье">
+            </div>
+            <p class="whats-new__name">Этническое платье</p>
+            <svg class="whats-new__tdl"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="75" height="12">
+              <line x1="0" y1="9" x2="75" y2="9" stroke="#5c5551"/>
+            </svg>
+            <p class="whats-new__price">7 800 рублей</p>
+          </div>
+          <div class="whats-new__item slider__slide">
+            <div class="whats-new__picture whats-new__picture--3">
+              <img class="whats-new__image" src="img/silk-dress-l.jpg" alt="Шелковое платье">
+            </div>
+            <p class="whats-new__name">Шелковое платье</p>
+            <svg class="whats-new__tdl"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="75" height="12">
+              <line x1="0" y1="9" x2="75" y2="9" stroke="#5c5551"/>
+            </svg>
+            <p class="whats-new__price">4 800 рублей</p>
+          </div>
+        </div>
+        <p class="whats-new__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--back" type="button">
+            <svg width="6" height="20">
+              <line x1="6" y1="0" x2="0" y2="6" stroke="#5c5551" stroke-width="2" />
+              <line x1="0" y1="6" x2="6" y2="12" stroke="#5c5551" stroke-width="2" />
+            </svg>
+          </button>
+          <svg width="4" height="20">
+            <line x1="1" y1="0" x2="1" y2="18" stroke="#5c5551" stroke-width="2" />
+          </svg>
+          <button class="slider__toggle slider__toggle--forward" type="button">
+            <svg width="6" height="20">
+              <line x1="0" y1="0" x2="6" y2="6" stroke="#5c5551" stroke-width="2" />
+              <line x1="6" y1="6" x2="0" y2="12" stroke="#5c5551" stroke-width="2" />
+            </svg>
+          </button>
+        </p>
+        <a class="whats-new__more" href="#">Смотреть все</a>
+      </div>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__point pagination__point--active">02</li>
+          <li class="pagination__point"><a href="#01">01</a></li>
+          <li class="pagination__point"><a href="#03">03</a></li>
+          <li class="pagination__point">04</li>
+          <li class="pagination__point">05</li>
+          <li class="pagination__point">06</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h2 class="about-us__title" id="03">О бренде</h2>
+      <div class="about-us__wrapper">
+        <p class="about-us__text about-us__text--1">
+          Концепция «свободной женщины» была придумана и создана основателем и дизайнером Кристиной Беккер на начальном этапе воплощения ее в реальность.
+        </p>
+        <p class="about-us__text about-us__text--2">
+          Идея разработки свободных кроем моделей с яркими дизайнерскими акцентами составляет основу бренда, которая получила настоящий успех и имиджевую популярность
+        </p>
+        <p class="about-us__text about-us__text--3">
+          Ключевыми моделями бренда I AM WOMEN стали рубашки и брюки с безупречной посадкой; а также платья, подчеркивающие женственные формы, и жилеты, вписывающиеся в любой гардероб современой женщины. Каждая модель сохраняет свою актуальность в
+          течение нескольких сезонов.
+        </p>
+      </div>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__point pagination__point--active">03</li>
+          <li class="pagination__point"><a href="#02">02</a></li>
+          <li class="pagination__point"><a href="#01">01</a></li>
+          <li class="pagination__point">04</li>
+          <li class="pagination__point">05</li>
+          <li class="pagination__point">06</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="blog__wrapper slider">
+        <h2 class="blog__title">Блог</h2>
+        <div class="blog__list slider__list--blog">
+          <div class="blog__item slider__slide">
+            <span class="blog__hashtag">&#35;новости</span>
+            <img class="blog__image" src="img/accessories.jpg" alt="Аксессуары осень-зима &#10075;18">
+            <h3 class="blog__subtitle">Аксессуары осень-зима &#10075;18</h3>
+            <p class="blog__text">
+              Аксессуары являются важнейшим частью для создания целостного образа. Правильно подобранные украшения помогут сделать лук более гармоничным и стильным, ну а неправильно — испортят ваш лук</p>
+          </div>
+          <div class="blog__item slider__slide">
+            <span class="blog__hashtag">&#35;советы</span>
+            <img class="blog__image" src="img/3looks.jpg" alt="3 крутых образа для офиса">
+            <h3 class="blog__subtitle">3 крутых образа для офиса</h3>
+            <p class="blog__text">Кому-то нравится строгий стиль в одежде, а кому-то приходится его придерживаться из-за офисного дресс-кода. Так или иначе, не стоит превращать деловой стиль в скучный и консервативный</p>
+          </div>
+          <div class="blog__item slider__slide">
+            <span class="blog__hashtag">&#35;советы</span>
+            <img class="blog__image" src="img/suit.jpg" alt="Лучший выбор: костюмы&#10076;18">
+            <h3 class="blog__subtitle">Лучший выбор: костюмы&#10076;18</h3>
+            <p class="blog__text">
+              Проще говоря, выбирайте более светлые и более темные оттенки одного цвета, в конкретном случае — родственные фиолетовому. Такой образ может легко вписаться в рамки повседневной жизни
+            </p>
+          </div>
+          <div class="blog__item slider__slide">
+            <span class="blog__hashtag">&#35;тенденции</span>
+            <img class="blog__image" src="img/ultraviolet.jpg" alt="С чем носить ультрафиолет?">
+            <h3 class="blog__subtitle">С чем носить ультрафиолет?</h3>
+            <p class="blog__text">
+              Уже не первый сезон монохромные образы являются одной из главных тенденций. Дизайнеры и стилисты призывают подбирать вещи в рамках одного сектора цветового круга</p>
+          </div>
+        </div>
+        <div class="blog__switch"></div>
+        <a class="blog__link" href="#">Перейти в блог</a>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="subscribe__wrapper">
+        <h2 class="subscribe__title">Подпишись на новости I AM WOMEN <br>и получите скидку 5% на следующую покупку</h2>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="subscribe__email" type="email" name="email" placeholder="Ваш E-mail">
+          <button class="subscribe__submit" type="submit">Подписаться</button>
+        </form>
+        <p class="subscribe__disclaimer">Подписываясь на новости, вы даёте согласие <br>на обработку персональных данных</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__catalog catalog">
+      <div class="catalog__wrapper catalog__wrapper--footer">
+        <div class="catalog__body catalog__body--footer">
+          <h3 class="catalog__subtitle catalog__subtitle--footer">Каталог</h3>
+          <div class="catalog__coat catalog__coat--footer">
+            <ul class="catalog__list catalog__list--footer">
+              <li class="catalog__item catalog__item--footer"><a href="">Пальто</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Жилеты и жакеты</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Костюмы</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Трикотаж</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Платья</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Блузы и топы</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Футболки</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Юбки и брюки</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Аксессуары</a></li>
+            </ul>
+            <ul class="catalog__list catalog__list--footer">
+              <li class="catalog__item catalog__item--footer"><a href="">О бренде</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Оферта</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Оплата и доставка</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Возврат</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Контакты</a></li>
+            </ul>
+            <ul class="catalog__list catalog__list--footer">
+              <li class="catalog__item catalog__item--footer"><a href="">Sale</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">New</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Looks</a></li>
+              <li class="catalog__item catalog__item--footer"><a href="">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__wrapper contacts">
+      <table class="contacts__body">
+        <tr class="contacts__line">
+          <td class="contacts__title">Звонок с сайта:</td>
+          <td class="contacts__address">+7 495 792 93 12</td>
+        </tr>
+        <tr class="contacts__line">
+          <td class="contacts__title">Присоединяйся к нам:</td>
+          <td class="contacts__address">
+            <ul class="contacts__social social">
+              <li class="social__item social__item-contacts"><a href="">Facebook</a></li>
+              <li class="social__item social__item-contacts"><a href="">Youtube</a></li>
+              <li class="social__item social__item-contacts"><a href="">Vkontakte</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr class="contacts__line contacts__discount">
+          <td class="contacts__title">Получи скидку 5%:</td>
+          <td class="contacts__address">
+            <form class="catalog__email-form" action="https://echo.htmlacademy.ru" method="post">
+              <input class="catalog__email-place" name="catalog-email-send" type="email" placeholder="Ваш E-mail" onchange="return emailForm();">
+            </form>
+          </td>
+        </tr>
+        <tr class="contacts__line contacts__pay">
+          <td class="contacts__title">Принимаем к оплате:</td>
+          <td class="contacts__address">
+            <ul class="contacts__social plastic">
+              <li class="plastic__item plastic__item--visa">
+                <a href="">
+                <span class="hidden">VISA</span>
+                </a>
+              </li>
+              <li class="plastic__item plastic__item--mastercard">
+                <a href="">
+                  <span class="hidden">MasterCard</span>
+                </a>
+              </li>
+              <li class="plastic__item plastic__item--paypal">
+                <a href="">
+                  <span class="hidden">PayPal</span>
+                </a>
+              </li>
+            </ul>
+            <p class="plastic__note">Вы можете оплатить наличными при <br>получении либо выбрать другой <span class="plastic__accent">способ оплаты</span></p>
+          </td>
+        </tr>
+      </table>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">&copy; 2008-2018 I AM WOMAN</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <script type="text/javascript" src="js/woman.js"></script>
+
+</body>
+
+</html>
