@@ -169,6 +169,7 @@ input[type="radio"].hidden {
 .catalog__body {
   position: relative;
   top: 215px;
+  width: 1170px;
 }
 
 .catalog__subtitle {
@@ -226,12 +227,20 @@ input[type="radio"].hidden {
   font-style: italic;
 }
 
-.catalog__find-form {
+.catalog__list--04 {
   position: relative;
+  top: 50px;
+}
+
+.catalog__find-form {
+  position: absolute;
   border-bottom: solid #342b2b 1px;
   margin: 0;
-  padding-left: 23px;
   box-shadow: none;
+  left: calc(1170px - 25%);
+  top: 250px;
+  padding-left: 23px;
+  width: 300px;
 }
 
 .catalog__marker {
@@ -257,12 +266,13 @@ input[type="radio"].hidden {
   font-size: 16px;
   color: rgba(52, 43, 43, 1);
 }
+
 .catalog__close {
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 60px;
-  top: -160px;
+  right: -180px;
+  top: -180px;
   border: none;
   background: transparent;
   cursor: pointer;

@@ -183,22 +183,10 @@ input[type="radio"].hidden {
 }
 
 .catalog__list--03 {
-  position: absolute;
-  left: 50%;
-  top: 67%;
-}
-
-.catalog__list--03 li:nth-child(n+3){
   display: none;
 }
 
 .catalog__list--04 {
-  position: absolute;
-  left: 50%;
-  top: 56%;
-}
-
-.catalog__list--04 li:nth-child(-n+2){
   display: none;
 }
 
@@ -221,6 +209,10 @@ input[type="radio"].hidden {
 
 .catalog__item a:active {
   color: #ff0000;
+}
+
+.catalog__find-form {
+  display: none;
 }
 
 .catalog__close {
