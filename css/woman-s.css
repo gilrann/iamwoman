@@ -200,6 +200,7 @@ input[type="radio"].hidden {
 .catalog__item a {
   text-decoration: none;
   cursor: pointer;
+  color: #342b2b;
 }
 
 .catalog__item a:hover,
